@@ -1,0 +1,19 @@
+Accessibility Violations Found:
+Violation: color-contrast
+Descriptions: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Impact: serious
+  NodeHTML: <a activeclassname="selected" data-testid="navbar-products" aria-current="page" class="nav-link active" href="/">Products</a>
+  Failure Summary: Fix any of the following:
+  Element has insufficient color contrast of 1.81 (foreground color: #ffa500, background color: #f5f5f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+  Node Selector: .active
+
+
+Violation: link-in-text-block
+Descriptions: Ensure links are distinguished from surrounding text in a way that does not rely on color
+Impact: serious
+  NodeHTML: <a href="https://x.com/commitquality" target="_blank" data-testid="banner-advert-link">@CommitQuality</a>
+  Failure Summary: Fix any of the following:
+  The link has insufficient color contrast of 1.47:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0000ff, surrounding text: #333333)
+  The link has no styling (such as underline) to distinguish it from the surrounding text
+  Node Selector: .banner-message > a[href$="commitquality"]
+
