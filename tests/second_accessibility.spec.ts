@@ -1,8 +1,9 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+// @ts-expect-error Node.js type definitions are not included in the project.
 import * as fs from "fs";
 
-test.only("Custom tags verifications", async ({ page }) => {
+test("Custom tags verifications", async ({ page }) => {
   await page.goto("https://commitquality.com/");
   //await page.goto("https://www.testing101.net");  // No accessibility violations
 
